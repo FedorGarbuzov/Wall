@@ -12,7 +12,7 @@ class WallServiceTest {
 
         val result = post2.id
 
-        assertEquals(0, result)
+        assertNotEquals(0, result)
     }
 
     @Test
