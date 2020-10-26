@@ -1,4 +1,4 @@
-class Likes(
+data class Likes(
     val count: Int = 0,
     val userLikes: Boolean = true,
     val canLike: Boolean = true,

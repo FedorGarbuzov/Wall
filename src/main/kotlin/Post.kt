@@ -1,7 +1,7 @@
 import java.text.SimpleDateFormat
 
-class Post(
-    id: Int = 0,
+data class Post(
+    val id: Int = 0,
     val ownerId: Int = 0,
     val fromId: Int = 0,
     val createdBy: Int = 0,
@@ -24,6 +24,4 @@ class Post(
     val markedAsAds: Boolean = true,
     val isFavorite: Boolean = true,
     val postponedId: Int = 0
-) {
-    var id = id
-}
+)

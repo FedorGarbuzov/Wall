@@ -10,7 +10,9 @@ class WallServiceTest {
         WallService.add(post)
         WallService.add(post2)
 
-        val result = post2.id
+        val resultId = WallService.posts[1]
+
+        val result = resultId.id
 
         assertNotEquals(0, result)
     }
@@ -27,6 +29,7 @@ class WallServiceTest {
 
     @Test
     fun updateFalse() {
+
         assertFalse(WallService.update(Post()))
     }
 }
